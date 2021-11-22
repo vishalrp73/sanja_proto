@@ -1,0 +1,61 @@
+.header-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    height: 120px;
+    position:fixed;
+    display: flex;
+    box-shadow: 0 1px 4px 4px rgba(54, 54, 54, 0.08);
+    color: #363636;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+.header-left {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.turners-logo {
+    height: 50%;
+}
+
+.menu-link {
+    margin: auto 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #363636;
+}
+
+.header-right {
+    width: 25%;
+    margin: auto 10% auto auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log_reg-btn {
+    width: 130px;
+    height: 45px;
+    border-radius: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+#log-btn {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+#reg-btn {
+    background-color: #0076BE;
+    color: #FFFFFF;
+    border: none;
+    margin: auto 10px;
+}

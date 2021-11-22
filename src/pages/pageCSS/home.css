@@ -1,0 +1,158 @@
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.banner-core {
+    background-color: rgba(0, 118, 190, 0.06);
+    height: 600px;
+    width: 80%;
+    margin: 35px auto;
+    border-radius: 100px;
+    display: flex;
+}
+
+.banner-left {
+    position: absolute;
+    margin: 5% auto auto 5%;
+    width: 40%;
+}
+
+.banner-title {
+    font-size: 56px;
+    color: #363636;
+    font-weight: 700;
+}
+
+.banner-search {
+    width: 420px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0.5px solid #363636;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner-fg-img {
+    max-width: 60%;
+    max-height: 550px;
+    margin: auto 5% auto auto;
+}
+
+/* Home Panel CSS */
+
+.home-panel {
+    width: 70%;
+    display: flex;
+    margin: 50px auto;
+}
+
+.panel-left {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.panel-text {
+    font-size: 22px;
+    color: #666666;
+    width: 90%;
+    text-align: justify;
+}
+
+.panel-btn {
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0076BE;
+    border-radius: 26px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.panel-right {
+    width: 60%;
+    height: 100%;
+}
+
+.panel-img {
+    width: 100%;
+}
+
+/* Review Panel CSS */
+
+.review-panel {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+    margin: 50px auto 100px;
+
+}
+
+.review-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+.review-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ind_review {
+    width: 500px;
+    background-color: rgba(0, 118, 190, 0.06);
+    border-radius: 10px;
+    margin: auto 10px;
+    padding: 20px;
+}
+
+.review-top_bar {
+    display: flex;
+    width: 90%;
+    height: 75px;
+    align-items: center;
+    margin: auto auto auto 10%;
+}
+
+.review-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #363636;
+    margin-right: 10px;
+}
+
+.review_star_img {
+    width: 24px;
+    height: 24px;
+}
+
+.review-loc {
+    margin: 0 0 10px 10%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+}
+.review-text {
+    margin: auto 10%;
+    text-align: justify;
+    font-size: 22px;
+    color: #363636;
+}

@@ -1,0 +1,11 @@
+.get-quote-btn {
+    width: 230px;
+    height: 50px;
+    border-radius: 26px;
+    background-color: #0076BE;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
