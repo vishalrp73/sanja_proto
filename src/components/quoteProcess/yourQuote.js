@@ -17,11 +17,6 @@ const YourQuote = () => {
     const showLearnMore = () => {
         learn ? setLearn(false) : setLearn(true);
         document.getElementById('learn-more-btn').value = 'Show Less'
-        console.log(document.getElementById('learn-more-btn').value);
-    }
-
-    const tempFunc = () => {
-        alert('temp function button clicked')
     }
 
     const handleClose = () => {
