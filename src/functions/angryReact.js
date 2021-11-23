@@ -5,7 +5,7 @@ export const angryReact = () => {
 
     const spooky = [
         `THIS ISN'T READY YET MF STOP CLICKING ON THINGS 😡`,
-        `U DESIGNED THIS CLICK TO NOWHERE THAT'S UR FAULT`,
+        `YOU DESIGNED THIS CLICK TO NOWHERE THAT'S UR FAULT`,
         `THERE'S NOTHING THERE DON'T CLICK THERE`
     ]
 

@@ -1,0 +1,18 @@
+.chatbot-wrapper {
+    width: 72px;
+    height: 72px;
+    background-color: #0076BE;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 4px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.message-icon {
+    width: 75%;
+}

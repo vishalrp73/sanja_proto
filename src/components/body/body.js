@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import Chatbot from '../chatbot/chatbot';
 
 import Home from '../../pages/home';
 import Insurance from '../../pages/insurance';
@@ -13,6 +14,8 @@ import Details from '../quoteProcess/details';
 import YourQuote from '../quoteProcess/yourQuote';
 import BuyQuote from '../quoteProcess/buyQuote';
 
+import Success from '../../pages/success';
+
 const Body = () => {
     return (
         <div className = 'body-wrapper'>
@@ -20,6 +23,8 @@ const Body = () => {
             <Router>
 
             <Header />
+
+            <Chatbot />
 
             <div className = 'core-body-wrapper'>
                 <Routes>
@@ -31,6 +36,8 @@ const Body = () => {
                     <Route exact path = '/quote.js' element = { <Quote /> } />
                     <Route exact path = '/yourQuote.js' element = { <YourQuote /> } />
                     <Route exact path = '/buyQuote.js' element = { <BuyQuote /> } />
+
+                    <Route exact path = '/success.js' element = { <Success /> } />
                 </Routes>
             </div>
 

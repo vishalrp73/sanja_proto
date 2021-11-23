@@ -1,13 +1,59 @@
-.header-wrapper {
+.header-container {
+    display: flex;
+    position:fixed;
+    flex-direction: column;
     width: 100%;
+    z-index: 2;
     max-width: 1920px;
     height: 120px;
-    position:fixed;
+}
+
+.header-top-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #F3F5F7;
+}
+
+.header-top-bar-content {
+    margin: auto 10% auto auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.phone-img {
+    width: 20px;
+    height: 20px;
+}
+
+.phone-text {
+    margin-left: 10px;
+}
+
+.en-lang {
+    margin-left: 100px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #0076BE;
+    text-decoration-thickness: 4px;
+    
+}
+
+.china-lang {
+    margin-left: 20px;
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 120px;
     display: flex;
     box-shadow: 0 1px 4px 4px rgba(54, 54, 54, 0.08);
     color: #363636;
     background-color: #FFFFFF;
-    z-index: 2;
 }
 
 .header-left {
