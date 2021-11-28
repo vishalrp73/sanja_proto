@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../../functions/scrollToTop';
 import './quoteCSS/yourQuote.css';
 import { Modal } from '@mui/material';
 import axios from 'axios';
@@ -126,6 +127,7 @@ const YourQuote = () => {
                                 </p>
                         </div>
                 </Modal>
+                <ScrollToTop />
         </div>
     )
 }

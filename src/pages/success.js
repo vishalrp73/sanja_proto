@@ -1,4 +1,5 @@
 import './pageCSS/success.css';
+import ScrollToTop from '../functions/scrollToTop';
 import success_img from '../img/success-banner.png';
 
 const Success = () => {
@@ -29,6 +30,7 @@ const Success = () => {
             <div className = 'success-right'>
                 <img src = { success_img } className = 'success-img' alt = 'happy-success' />
             </div>
+            <ScrollToTop />
         </div>
     )
 }

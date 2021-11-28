@@ -1,8 +1,9 @@
 import './quoteCSS/buyOnline.css';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { Modal } from '@mui/material'
+import ScrollToTop from '../../functions/scrollToTop';
 
 import QuotePanel from '../../components/quotePanel/quotePanel';
 import SearchLocationInput from '../../functions/searchAddress/SearchLocationInput.js';
@@ -36,6 +37,8 @@ const BuyOnline = () => {
     const [userEmailGuest, setUserEmailGuest] = useState('');
     const [userEmail, setUserEmail] = useState('');
     const [userPass, setUserPass] = useState('');
+
+    const history = useHistory();
     
     const handleChange = (e, id) => {
         if (id === 'f-name') {
@@ -76,8 +79,28 @@ const BuyOnline = () => {
         }
     });
 
+    const handleLogin = (id) => {
+        if (id === 1) {
+            const loginObj = {
+                email : userEmail,
+                password: userPass
+            }
+            axios.post('http://localhost:4000/login', loginObj)
+            .then (response => {
+                if (response.status === 201) {
+                    console.log('login successful');
+                    history.push('/success.js');
+                    window.location.reload(false);
+                } else if (response.status === 400) {
+                    console.log('unsuccessful login');
+                }
+            })
+            .catch (err => console.log(err));
+        }
+    }
+
     const confirmPurchase = () => {
-        /* try {
+        try {
             const userData = JSON.parse(localStorage.getItem('User Cover Details'));
             const storageAddress = localStorage.getItem('storage-address');
             const homeAddress = localStorage.getItem('home-address');
@@ -125,7 +148,7 @@ const BuyOnline = () => {
             .catch (err => console.log(err));
         } catch {
             console.log('not enough data')
-        }*/
+        }
         setOpen(true);
     }
 
@@ -349,10 +372,8 @@ const BuyOnline = () => {
                             {
                                 (userEmailGuest !== '') ?
                                     <>
-                                        <Link to = '/success.js' className = 'cont-acc-link'>
                                             <input type = 'button' className = 'cont-acc-btn'
-                                                value = 'Continue as Guest' />
-                                        </Link>
+                                                value = 'Continue as Guest' onClick = {() => handleLogin(0)} />
                                     </> : 
                                     <>
                                         <input type = 'button' className = 'cont-acc-btn'
@@ -395,10 +416,8 @@ const BuyOnline = () => {
                                     (userEmail !== '')
                                     && (userPass !== '') ?
                                         <>
-                                            <Link to = '/success.js'>
                                                 <input type = 'button' className = 'cont-acc-btn'
-                                                    value = 'Continue as Member'/>
-                                            </Link>
+                                                    value = 'Continue as Member' onClick = {() => handleLogin(1)} />
                                         </> :
                                         <>
                                             <input type = 'button' className = 'cont-acc-btn'
@@ -415,6 +434,7 @@ const BuyOnline = () => {
 
                 </div>
             </Modal>
+            <ScrollToTop />
 
 
         </div>

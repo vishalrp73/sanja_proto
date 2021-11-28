@@ -2,7 +2,7 @@ import { FormControl, MenuItem, Select } from '@mui/material';
 import DatePicker from 'react-datepicker';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import ScrollToTop from '../../functions/scrollToTop';
 import axios from 'axios';
 
 import './quoteCSS/coverDetails.css';
@@ -351,7 +351,7 @@ const CoverDetails = () => {
                 
             
             </div>
-           
+           <ScrollToTop />
         </div>
     )
 }
