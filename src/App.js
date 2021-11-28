@@ -12,7 +12,8 @@ import Success from './pages/success';
 
 
 function App() {
-
+  
+  console.log('Initiating new feature polish branch')
 
   return (
     <div className="App">
