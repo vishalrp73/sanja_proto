@@ -1,9 +1,11 @@
 .ft-comp-wrap {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .footer-wrapper {
+    width: 100%;
     background-color: rgba(154, 155, 156, 0.15);
     border-radius: 75px 75px 0px 0px;
     padding-top: 20px;

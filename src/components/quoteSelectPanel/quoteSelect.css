@@ -1,0 +1,172 @@
+.quote-select-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 118, 190, 0.06);
+    border-radius: 10px;
+    width: 30%;
+    margin: 0px auto auto auto;
+    cursor: pointer;
+}
+
+#rec_panel {
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.select-quote-panel {
+    border: 2px solid #0076BE;
+}
+
+.quote-rec-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #0076BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.quote-rec-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.quote-panel-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 70px;
+}
+
+.quote-panel-title-rec {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.quote-panel-price {
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.annually-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.benefit-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefit-box {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.quote-panel-tick {
+    width: 40px;
+    height: 40px;
+}
+
+.benefit-text {
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.quote-panel-btn-wrap {
+    width: 80%;
+    border: 1px solid #ADBCCB;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 20px auto;
+    display: flex;
+}
+
+.learn-btn {
+    width: 180px;
+    height: 50px;
+    margin: 20px auto 0px auto;
+    border: 1px solid #0076BE;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    border-radius: 26px;
+    color: #0076BE;
+    cursor: pointer;
+}
+
+/* Extra Panel CSS */
+
+.extra-panel {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-item {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.extra-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.extra-sub-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.temp-radio {
+    margin-right: 10px;
+}
+
+.extra-text {
+    margin: 0;
+}
+
+.agreed-value-input {
+    width: 90%;
+    margin: 10px auto;
+    height: 40px;
+    padding: 10px;
+    border: 0.5px solid #363636;
+    background-color: #FFFFFF;
+    border-radius: 4px;;
+}
+
+.extra-tc {
+    font-size: 22px;
+    font-weight: 700;
+    color: #363636;
+    text-decoration: underline;
+}
+
+.buy-now-btn {
+    background-color: #0076BE;
+    width: 230px;
+    height: 50px;
+    border-radius: 26px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    margin: 10px auto 20px;
+    cursor: pointer;
+}

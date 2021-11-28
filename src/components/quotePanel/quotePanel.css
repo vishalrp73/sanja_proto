@@ -1,0 +1,28 @@
+.quote-panel-wrapper {
+    width: 45%;
+    margin: 10px;
+}
+
+.ind_question-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: #363636;
+}
+
+.ind_question-caption {
+    font-size: 22px;
+    color: #363636;
+    font-weight: 400;
+}
+
+.ind_question-text-input {
+    width: 90%;
+    height: 55px;
+    padding: 10px;
+    margin: auto auto 0 auto;
+    border: 0.5px solid #363636;
+    border-radius: 4px;
+    font-size: 22px;
+    color: #363636;
+}

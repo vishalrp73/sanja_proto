@@ -1,9 +1,9 @@
 import './footer.css';
 
-import fb_icon from '../../img/fb-icon.png';
-import ig_icon from '../../img/ig-icon.png';
-import award_1 from '../../img/award-1.png';
-import award_2 from '../../img/award-2.png';
+import fb_icon from '../../img/footer/fb-icon.png';
+import ig_icon from '../../img/footer/ig-icon.png';
+import award_1 from '../../img/footer/award-1.png';
+import award_2 from '../../img/footer/award-2.png';
 
 import { Link } from 'react-router-dom';
 
@@ -91,16 +91,16 @@ const Footer = () => {
                         <div className = 'follow-wrap'>
                             <h3 className = 'links-title'>Follow Us</h3>
                             <div className = 'ft-img-wrap'>
-                                <img src = { fb_icon } className = 'link-img' />
-                                <img src = { ig_icon } className = 'link-img' />
+                                <img src = { fb_icon } className = 'link-img' alt = 'logo' />
+                                <img src = { ig_icon } className = 'link-img' alt = 'logo' />
                             </div>
                         </div>
 
                         <div className = 'awards-wrap'>
                             <h3 className = 'links-title'>Awards</h3>
                             <div className = 'ft-img-wrap'>
-                                <img src = { award_1 } className = 'awards-img' />
-                                <img src = { award_2 } className = 'awards-img' />
+                                <img src = { award_1 } className = 'awards-img' alt = 'award' />
+                                <img src = { award_2 } className = 'awards-img' alt = 'award' />
                             </div>
                         </div>
 

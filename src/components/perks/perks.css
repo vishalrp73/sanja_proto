@@ -1,0 +1,23 @@
+.perk-wrap {
+    width: 33%;
+    margin: 0px auto auto auto;
+}
+
+.perks-img {
+    width: 150px;
+    margin: 0;
+}
+
+.perk-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.perks-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: #363636;
+    width: 75%;
+}

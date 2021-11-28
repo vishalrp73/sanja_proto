@@ -1,0 +1,29 @@
+.stepper-wrapper {
+    width: 60%;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepper-bar-img {
+    height: 5px;
+    width: 100px;
+}
+
+.stepper-box {
+    height: 75px;
+    text-decoration: none;
+    margin: 0px auto;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ADBCCB;
+}
+
+.active-text {
+    border: 5px solid #0076BE;
+    color: #0076BE;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

@@ -1,0 +1,143 @@
+.yourQ-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.yourQ-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.quote-detail-wrapper {
+    width: 85%;
+    padding: 20px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgba(0, 118, 190, 0.06);
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.quote-num-text {
+    margin: auto auto auto 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.email-quote-btn {
+    margin: auto 0 auto auto;
+    width: 180px;
+    height: 50px;
+    border-radius: 26px;
+    border: 1px solid #0076BE;
+    background-color: transparent;
+    color: #0076BE;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Bottom navigation CSS */
+
+.bottom-nav-btns {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.bottom-back-link {
+    margin: auto auto auto 0;
+}
+
+.bottom-back-btn {
+    cursor: pointer;
+    width: 230px;
+    height: 55px;
+    border-radius: 26px;
+    border: 1px solid #0076BE;
+    background-color: #FFFFFF;
+    color: #0076BE;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.bottom-forward-link {
+    margin: auto 0 auto auto;
+}
+
+.bottom-forward-btn {
+    width: 230px;
+    height: 55px;
+    border-radius: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    background-color: #0076BE;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Email Modal CSS */
+
+.email-modal-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.close-modal {
+    margin: 20px 20px auto auto;
+    cursor: pointer;
+    color: #363636;
+}
+
+.quote-email-input {
+    width: 80%;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #363636;
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    margin: auto;
+}
+
+.quote-send-btn {
+    width: 220px;
+    padding: 10px;
+    height: 50px;
+    background-color: #0076BE;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 26px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.quote-send-btn:hover {
+    filter: brightness(0.5);
+}
+
+.quote-send-btn:active {
+    filter: brightness(2);
+}
+
+.email-modal-display {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}

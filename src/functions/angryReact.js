@@ -4,9 +4,9 @@ export const angryReact = () => {
     console.log(randNum);
 
     const spooky = [
-        `THIS ISN'T READY YET MF STOP CLICKING ON THINGS 😡`,
-        `YOU DESIGNED THIS CLICK TO NOWHERE THAT'S UR FAULT`,
-        `THERE'S NOTHING THERE DON'T CLICK THERE`
+        `UNO 😡`,
+        `DOS`,
+        `TRES`
     ]
 
     alert(spooky[randNum]);

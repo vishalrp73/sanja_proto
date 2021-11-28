@@ -1,0 +1,40 @@
+.user-quote-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.quote-choose-wrap {
+    width: 50%;
+    margin: 20px 0 20px auto;
+    display: flex;
+}
+
+.quote-choose-btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 26px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    margin: auto 20px;
+    background-color: #E5E5E5;
+    color: #A8A8A8;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.quote-choose-btn-active {
+    background-color: #0076BE;
+    color: #FFFFFF;
+}
+
+/* Quote Select */
+
+.quote-select-wrap {
+    width: 100%;
+    display: flex;
+    color: #363636;
+}

@@ -1,11 +1,9 @@
 import './pageCSS/success.css';
-import { angryReact } from '../functions/angryReact';
-import success_img from '../img/success-banner.png'
+import success_img from '../img/success-banner.png';
 
 const Success = () => {
     return (
         <div className = 'success-wrapper'>
-
             <div className = 'success-left'>
                 <h1 className = 'success-title'>
                     Hooray! You're ready for any unexpected bumps in the road.
@@ -23,13 +21,13 @@ const Success = () => {
                             type = 'button' value = 'Back Home' />
                     </a>
                     <input className = 'success-btn' id = 'acc-btn'
-                        type = 'button' value = 'My Account' onClick = { () => angryReact() } />
+                        type = 'button' value = 'My Account' />
                     
                 </div>
             </div>
 
             <div className = 'success-right'>
-                <img src = { success_img } className = 'success-img' />
+                <img src = { success_img } className = 'success-img' alt = 'happy-success' />
             </div>
         </div>
     )
