@@ -77,7 +77,7 @@ const BuyOnline = () => {
         } catch {
             console.log('info not found');
         }
-    });
+    }, []);
 
     const handleLogin = (id) => {
         if (id === 1) {

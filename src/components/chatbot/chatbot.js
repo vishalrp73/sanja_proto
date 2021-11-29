@@ -7,7 +7,7 @@ const Chatbot = () => {
 
     return (
         <div className = 'chatbot-wrapper'>
-            <img src = { message_icon } className = 'message-icon'
+            <img src = { message_icon } className = 'message-icon' alt = 'chatbot'
                 onClick = { () => angryReact() } />
         </div>
     )

@@ -35,6 +35,10 @@ const UserQuote = (props) => {
         localStorage.setItem('payment_period', period);
     }, [period])
 
+    useEffect(() => {
+        setPriceHike(props.priceHike);
+    }, [props.priceHike])
+
     return (
         <div className = 'user-quote-wrapper'>
             

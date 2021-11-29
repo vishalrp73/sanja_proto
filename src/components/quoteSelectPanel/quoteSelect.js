@@ -23,7 +23,9 @@ const QuoteSelect = (props) => {
 
     useEffect(() => {
         setPeriod(props.period);
-    }, [props.period])
+        setPolicy(props.policy);
+        setPriceHike(props.priceHike);
+    }, [props.period, props.priceHike, props.policy]);
 
 
     const calcPrice = () => {
@@ -128,19 +130,19 @@ const QuoteSelect = (props) => {
             </h1>
             <div className = 'benefit-wrap'>
                 <div className = 'benefit-box'>
-                    <img src = { tick } className = 'quote-panel-tick' />
+                    <img src = { tick } className = 'quote-panel-tick' alt = 'tick' />
                     <p className = 'benefit-text'>Earn Flybuys</p>
                 </div>
                 <div className = 'benefit-box'>
-                    <img src = { tick } className = 'quote-panel-tick' />
+                    <img src = { tick } className = 'quote-panel-tick' alt = 'tick' />
                     <p className = 'benefit-text'>Earn Airpoints</p>
                 </div>
                 <div className = 'benefit-box'>
-                    <img src = { tick } className = 'quote-panel-tick' />
+                    <img src = { tick } className = 'quote-panel-tick' alt = 'tick' />
                     <p className = 'benefit-text'>Supercheap Auto Discount</p>
                 </div>
                 <div className = 'benefit-box'>
-                    <img src = { tick } className = 'quote-panel-tick' />
+                    <img src = { tick } className = 'quote-panel-tick' alt = 'tick' />
                     <p className = 'benefit-text'>${props.discount} Online Discount</p>
                 </div>
             </div>

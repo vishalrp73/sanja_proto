@@ -31,7 +31,6 @@ const CoverDetails = () => {
     const [currIns, setCurrIns] = useState('');
     const [licYears, setLicYears] = useState('');
     const [prevInc, setPrevInc] = useState('');
-    const [errDis, setErrDis] = useState(false);
 
     const handleChange = (event, boxId) => {
         if (boxId === 'how-car-used') {
@@ -100,14 +99,12 @@ const CoverDetails = () => {
         }
         axios.post('http://localhost:4000/rego', regoPost)
         .then (response => {
-            setErrDis(false);
             const splitData = ((response.data).split('in')).reverse();
             setVehicleModel(splitData);
             localStorage.setItem('vehicleModel', splitData);
         })
         .catch(err => {
             console.log(err);
-            setErrDis(true);
         });
     }
 
