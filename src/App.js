@@ -10,6 +10,8 @@ import Insurance from './pages/insurance';
 import GetQuote from './pages/getQuote';
 import Success from './pages/success';
 
+import Chatbot from './components/chatbot/chatbot';
+
 
 function App() {
   
@@ -23,13 +25,12 @@ function App() {
         <div className = 'content-body-container'>
 
           <Header /> 
+          <Chatbot />
 
           <div className = 'core-wrapper'>
 
             <Switch>
-
               <div className = 'core-content-container'>
-
                 <Route exact path = '/'>
                   <Home />
                 </Route>
@@ -45,18 +46,16 @@ function App() {
                 <Route exact path = '/success.js'>
                   <Success />
                 </Route>
-              
               </div>
-
             </Switch>
 
-            <Footer />
-
+          <Footer />
           </div>
+
 
         </div>
         
-        
+
       </Router>
 
     </div>

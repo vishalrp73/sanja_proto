@@ -4,16 +4,24 @@
     flex-direction: column;
 }
 
-.direct-debit-text {
-    padding-top: 20px;
-    padding-left: 2%;
-    margin: 0;
+.dd-wrapper {
     font-size: 28px;
     font-weight: 700;
     background-color: rgba(0, 118, 190, 0.06);
     width: 95%;
     color: #363636;
     border-radius: 10px 10px 0px 0px;
+    display: flex;
+}
+
+.direct-debit-text {
+    padding-top: 20px;
+    padding-left: 2%;
+    margin: 0;
+}
+
+#dd-x {
+    margin: auto 5% auto auto;
 }
 
 .buyQ-review-cap {

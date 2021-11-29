@@ -36,6 +36,7 @@ async function handlePlaceSelect(updateQuery) {
 
 const SearchLocationInput = (props) => {
     const [query, setQuery] = useState("");
+    const [locked, setLocked] = useState(false);
     const autoCompleteRef = useRef(null);
 
     useEffect(() => {
@@ -55,11 +56,11 @@ const SearchLocationInput = (props) => {
         } else if (props.location === 'buy') {
             localStorage.setItem('home-address', query)
         }
-        
+        setLocked(true);
     }
 
     return (
-        <div className = 'search-location-input'>
+        <div className = 'search-location-input' style={{border: locked ? '2px solid limegreen' : 'none', padding: locked ? '10px' : '0px'}}>
             <input ref = {autoCompleteRef} onChange = {event => postAddress(event)}
                 placeholder = 'Start typing an address...' value = {query }
                 className = 'search-input' />

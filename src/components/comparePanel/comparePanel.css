@@ -56,6 +56,10 @@
     color: #0076BE;
 }
 
+.compare-btn-bn-link {
+    margin: auto;
+}
+
 #compare-bn-btn {
     border: none;
     background-color: #0076BE;

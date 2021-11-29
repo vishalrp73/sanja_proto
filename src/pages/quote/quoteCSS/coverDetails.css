@@ -48,17 +48,7 @@
     padding-bottom: 20px;
 }
 
-.main-driver {
-    padding-left: 5%;
-    padding-top: 20px;
-    margin: 0;
-    font-size: 28px;
-    font-weight: 700;
-    background-color: rgba(0, 118, 190, 0.06);
-    width: 95%;
-    color: #363636;
-    border-radius: 10px 10px 0px 0px;
-}
+
 
 .add-driver-wrapper {
     width: 95%;
@@ -137,4 +127,35 @@
     margin: auto;
     color: limegreen;
     font-weight: bolder;
+}
+
+#inactive-btn {
+    background-color: rgba(150, 150, 150);
+}
+
+.required-warn {
+    font-style: italic;
+    color: #363636;
+}
+
+/* Main Driver CSS */
+
+.main-driver-wrap {
+    width: 95%;
+    display: flex;
+    background-color: rgba(0, 118, 190, 0.06);
+    font-size: 28px;
+    font-weight: 700;
+    color: #363636;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#md-x {
+    margin: auto 5% auto auto;
+}
+
+.main-driver {
+    padding-left: 5%;
+    padding-top: 20px;
+    margin: 0;
 }

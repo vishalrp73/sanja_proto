@@ -1,7 +1,7 @@
 import './homePanel.css';
 
 import { Link } from 'react-router-dom';
-
+import {ReactComponent as Backing} from '../../img/home/backing-1.svg';
 
 const HomePanel = (props) => {
     
@@ -17,7 +17,7 @@ const HomePanel = (props) => {
                 </Link>
             </div>
 
-            <div className = 'panel-right'>
+            <div className = 'panel-right' style={{background: <Backing/>, backgroundSize: 'contain'}}>
                 <img src = {props.img} className = 'panel-img' alt = 'great-success'/>
             </div>
         </div>

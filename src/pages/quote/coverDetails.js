@@ -143,7 +143,7 @@ const CoverDetails = () => {
                                                 }
                                             </div></> : <></>
                                     }
-                                <p onClick = { () => checkRego() }>Don't know your registration number?</p>
+                                <a href = 'https://www.nzta.govt.nz/vehicles/licensing-rego/number-plates/'>Don't know your registration number?</a>
                             </>} />
 
                     <QuotePanel
@@ -236,16 +236,24 @@ const CoverDetails = () => {
             <div className = 'detail-panel'>
                 <h4 className = 'detail-panel-title'>About You</h4>
 
-                <h3 className = 'main-driver'>The Main Driver +</h3>
+                <div className = 'main-driver-wrap'>
+                    <h3 className = 'main-driver'>The Main Driver</h3>
+                    <h3 className = 'main-driver' id = 'md-x'>+</h3>
+                </div>
+
                 <div className = 'detail-panel-core' id = 'dp-ay'>
 
                     <QuotePanel
                         title = 'What is your date of birth?'
                         input = {
                             <div className = 'datepick-wrap'>
-                                <DatePicker selected = {dateOfBirth} placeholderText = 'e.g. 19/10/1997'
+                                <DatePicker selected = {dateOfBirth} 
+                                    placeholderText = 'e.g. 19/10/1997'
                                     onChange = {(dateOfBirth) => setDateOfBirth(dateOfBirth)}
-                                    className = 'datepicker' />
+                                    className = 'datepicker'
+                                    showMonthDropdown
+                                    showYearDropdown
+                                    dropdownMode = 'select' />
                             </div>
                         } />
                     
@@ -351,7 +359,13 @@ const CoverDetails = () => {
                                 <input type = 'button' value = 'Continue to Quote' 
                                     className = 'con_quote-btn' onClick = {() => handleCont()} />
                             </Link>
-                            </> : <><p className = 'required-warn'>Please fill all the required fields</p></>
+                            </> : <>
+                                    <div className = 'con-quote-link'>
+                                        <input id = 'inactive-btn' type = 'button'
+                                            value = 'Continue to Quote' className = 'con_quote-btn' />
+                                        <p className = 'required-warn'>Please fill all the required fields *</p>
+                                    </div>
+                                </>
                 }
 
                 

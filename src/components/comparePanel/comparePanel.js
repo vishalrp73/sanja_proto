@@ -25,8 +25,10 @@ const ComparePanel = (props) => {
             <div className = 'compare-btn-wrap'>
                 <input type = 'button' className = 'compare-btn'
                     value = 'Full Policy' id = 'fp-btn' />
-                <input type = 'button' className = 'compare-btn'
-                    value = 'Buy Now' id = 'compare-bn-btn' />
+                <a href = '/getQuote.js' className = 'compare-btn-bn-link'>
+                    <input type = 'button' className = 'compare-btn'
+                        value = 'Buy Now' id = 'compare-bn-btn' />
+                </a>
             </div>
 
 

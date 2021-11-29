@@ -99,8 +99,8 @@ const Footer = () => {
                         <div className = 'awards-wrap'>
                             <h3 className = 'links-title'>Awards</h3>
                             <div className = 'ft-img-wrap'>
-                                <img src = { award_1 } className = 'awards-img' alt = 'award' />
-                                <img src = { award_2 } className = 'awards-img' alt = 'award' />
+                                <img src = { award_1 } className = 'awards-img' alt = 'award' id = 'award-1' />
+                                <img src = { award_2 } className = 'awards-img' alt = 'award' id = 'award-2' />
                             </div>
                         </div>
 

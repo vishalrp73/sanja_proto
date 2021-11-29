@@ -10,8 +10,7 @@ const Stepper = () => {
 
             <NavLink to = '/getQuote.js'
                 className = 'stepper-box' activeClassName = 'active-text'>
-                <p className = 'stepper-text'>
-                    Cover Details</p>
+                        <p className = 'stepper-text'>Cover Details</p>
             </NavLink>
 
             <img src = { bar } className = 'stepper-bar-img' alt = 'stepper-bar' />

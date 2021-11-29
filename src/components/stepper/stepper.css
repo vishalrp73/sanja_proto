@@ -9,6 +9,7 @@
 .stepper-bar-img {
     height: 5px;
     width: 100px;
+    margin: 20px auto 0px;
 }
 
 .stepper-box {
@@ -20,10 +21,29 @@
     color: #ADBCCB;
 }
 
-.active-text {
+/* .active-text {
     border: 5px solid #0076BE;
-    color: #0076BE;
+    
     border-top: none;
     border-left: none;
     border-right: none;
+} */
+
+
+.active-text { 
+    position: relative;
+    z-index : 1;
+    background: transparent;
+    color: #0076BE;
 }
+
+.active-text:before {
+    content : "";
+    position: absolute;
+    left    : 40%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 25%;  /* or 100px */
+    border-bottom: 5px solid #0076BE;
+    border-radius: 20px;
+  }

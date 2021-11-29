@@ -71,8 +71,8 @@
 }
 
 .quote-panel-tick {
-    width: 40px;
-    height: 40px;
+    width: 14px;
+    height: 13px;
 }
 
 .benefit-text {
@@ -167,6 +167,20 @@
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     border: none;
-    margin: 10px auto 20px;
     cursor: pointer;
+    margin: 10px auto 20px;
+}
+
+.buy-now-btn:hover {
+    filter: brightness(1.5);
+}
+
+.buy-now-btn:active {
+    filter: brightness(0.5);
+}
+
+.buy-now-btn-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

@@ -178,10 +178,13 @@ const QuoteSelect = (props) => {
                     <h5 className = 'extra-tc'>Terms and Conditions</h5>
                 </div>
 
-                <Link to = '/buyOnline.js'>
-                    <input type = 'button' className = 'buy-now-btn'
-                        value = 'Buy Now' onClick = { () => proceedBuy(policy) } />
-                </Link>
+                <div className = 'buy-now-btn-link'>
+                    <Link to = '/buyOnline.js'>
+                        <input type = 'button' className = 'buy-now-btn'
+                            value = 'Buy Now' onClick = { () => proceedBuy(policy) } />
+                    </Link>
+                </div>
+
             </div>
 
         </div>

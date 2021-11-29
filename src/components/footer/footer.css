@@ -79,6 +79,7 @@
 
 .ft-img-wrap {
     display: flex;
+    align-items: flex-end;
 }
 
 .link-img {
@@ -87,9 +88,15 @@
     margin: 0 10px;
 }
 
-.awards-img {
+#award-1 {
     width: 130px;
-    height: 130px;
+    height: 117px;
+}
+
+#award-2 {
+    margin-left: 20px;
+    width: 121px;
+    height: 129px;
 }
 
 .sub-input {

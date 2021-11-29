@@ -98,6 +98,10 @@ const BuyOnline = () => {
                 console.log('unsuccessful login')
                 document.getElementById('login-err').innerHTML = 'Authentication failed !'
             });
+        } else {
+            alert('user details will not be posted to database');
+            history.push('/success.js');
+            window.location.reload(false);
         }
     }
 
@@ -220,8 +224,11 @@ const BuyOnline = () => {
 
             <div className = 'detail-panel'>
                 <h4 className = 'detail-panel-title'>Your Details</h4>
-                <h3 className = 'direct-debit-text'>Direct Debit Details</h3>
-                <div className = 'detail-panel-core'>
+                <div className = 'dd-wrapper'>
+                    <h3 className = 'direct-debit-text'>Direct Debit Details</h3>
+                    <h4 className = 'direct-debit-text' id = 'dd-x'>+</h4>
+                </div>
+                <div className = 'detail-panel-core' id = 'dp-ay'>
                     <QuotePanel
                         title = 'Billing Customer'
                         input = {
@@ -341,7 +348,14 @@ const BuyOnline = () => {
                         <>
                             <input type = 'button' className = 'bottom-forward-btn' 
                                 value = 'Confirm Purchase' onClick = {() => confirmPurchase()} />
-                        </> : <></>
+                        </> : 
+                            <>
+                                <div>
+                                    <input type = 'button' className = 'bottom-forward-btn' 
+                                        value = 'Confirm Purchase' id = 'inactive-btn' />
+                                    <p className = 'required-warn'>Please fill all the required fields *</p>
+                                </div>
+                            </>
                 }
 
             </div>
