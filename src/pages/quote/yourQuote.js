@@ -120,7 +120,7 @@ const YourQuote = () => {
                             <h2 className = 'yourQ-title' style = {{textAlign: 'center'}}>Enter your email address</h2>
                             <input type = 'email' placeholder = 'Enter email address' className = 'quote-email-input'
                                 onChange = {(e) => setQuoteEmail(e.target.value)} />
-                            <input type = 'button' value = 'Send Me My Quote' onClick = {() => sendQuote()}
+                            <input type = 'button' value = 'Send My Quote' onClick = {() => sendQuote()}
                                 className = 'quote-send-btn' />
                                 <p className = 'email-modal-display' id = 'email-display'
                                     style = {{color: !disErr ? 'limegreen' : 'orangered'}}>

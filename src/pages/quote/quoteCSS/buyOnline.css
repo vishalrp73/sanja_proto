@@ -189,3 +189,9 @@
     color: #0076BE;
     margin: auto 0 15px auto;
 }
+
+#login-err {
+    color: orangered;
+    font-weight: bolder;
+    text-align: center;
+}

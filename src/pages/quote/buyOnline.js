@@ -91,11 +91,13 @@ const BuyOnline = () => {
                     console.log('login successful');
                     history.push('/success.js');
                     window.location.reload(false);
-                } else if (response.status === 400) {
-                    console.log('unsuccessful login');
                 }
             })
-            .catch (err => console.log(err));
+            .catch (err => {
+                console.log(err)
+                console.log('unsuccessful login')
+                document.getElementById('login-err').innerHTML = 'Authentication failed !'
+            });
         }
     }
 
@@ -409,6 +411,8 @@ const BuyOnline = () => {
                                 <input type = 'checkbox' className = 'modal-checkbox' />
                                 <p className = 'modal-check-text'>Keep me logged in</p>
                             </div>
+
+                            <p className = 'modal-caption' id = 'login-err'></p>
 
                             <div className = 'temp'>
 

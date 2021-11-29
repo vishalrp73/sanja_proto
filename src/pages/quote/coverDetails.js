@@ -128,7 +128,7 @@ const CoverDetails = () => {
                                 <div className = 'rego-check-wrap'>
                                     <input type = 'text' className = 'ind_question-text-input'
                                         placeholder = 'ABC123' onChange = {(e) => handleChange(e, 'reg-num')} />
-                                    <input type = 'button' className = 'reg-check-btn' value = 'Check'
+                                    <input type = 'button' className = 'reg-check-btn' value = 'Lock In'
                                         onClick = {() => checkRego()} />
                                 </div>
                                     {
@@ -212,11 +212,12 @@ const CoverDetails = () => {
                                             <MenuItem value = 'No'>No</MenuItem>
                                     </Select>
                                 </FormControl>
+                                {(finance === 'Yes') ? <><p>lmao broke ass</p></> : <></>}
                             </div>
                         } />
 
                     <QuotePanel
-                        title = {`Does your car have modifications? *`}
+                        title = {`Does your car have any unrepaired damage or mechanical defects? *`}
                         input = {
                             <div className = 'mui-select-wrap'>
                                 <FormControl fullWidth>
@@ -251,6 +252,7 @@ const CoverDetails = () => {
                     <QuotePanel
                         title = {`Are you female or male? *`}
                         input = {
+                            <>
                             <div className = 'mui-select-wrap'>
                                 <FormControl fullWidth>
                                     <Select labelId = 'gender-labelId' id = 'gender-select'
@@ -261,6 +263,8 @@ const CoverDetails = () => {
                                     </Select>
                                 </FormControl>
                             </div>
+                                {(gender === 'Male') ? <><p>+ $100 added to quote for shitty hypermasculine vroom vroom</p></> : <></>}
+                            </>
                         } />
 
                     <QuotePanel
@@ -303,6 +307,7 @@ const CoverDetails = () => {
                                             <MenuItem value = '20+'>20+ years</MenuItem>
                                     </Select>
                                 </FormControl>
+                                {(licYears === 'less1') ? <><p>Great, institutionalise them while they're young</p></> : <></>}
                             </div>
                         } />
 
@@ -318,6 +323,7 @@ const CoverDetails = () => {
                                             <MenuItem value = 'No'>No</MenuItem>
                                     </Select>
                                 </FormControl>
+                                {(prevInc === 'Yes') ? <><p>We insure criminals as long as they pay up front</p></> : <></>}
                             </div>
                         } />
                 </div>
@@ -345,7 +351,7 @@ const CoverDetails = () => {
                                 <input type = 'button' value = 'Continue to Quote' 
                                     className = 'con_quote-btn' onClick = {() => handleCont()} />
                             </Link>
-                            </> : <></>
+                            </> : <><p className = 'required-warn'>Please fill all the required fields</p></>
                 }
 
                 
