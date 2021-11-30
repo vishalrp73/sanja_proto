@@ -124,7 +124,7 @@ const QuoteSelect = (props) => {
                         </div>
                     </> : <></>
             }
-            <h2 className = {!props.rec ? 'quote-panel-title' : 'quote-panel-title-rec' }>Third Party Property Damage</h2>
+            <h2 className = {!props.rec ? 'quote-panel-title' : 'quote-panel-title-rec' }>{props.title}</h2>
             <h1 className = 'quote-panel-price'>
                 {price}<span className = 'annually-text'>{period}</span>
             </h1>

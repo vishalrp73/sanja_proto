@@ -163,7 +163,7 @@ app.post('/email', (req, res) => {
         from: process.env.EMAIL,
         to: req.body.emailAddress,
         subject: `Your Quote - ${req.body.emailAddress}`,
-        text: `registration number: ${userDataBreak.regNum}\npolicy start date: ${new Date(userDataBreak.date).toDateString()}\ndate of birth: ${new Date(userDataBreak.dateOfBirth).toDateString()}\ngender: ${userDataBreak.gender}\nlicence: ${userDataBreak.licenceType}\ncurrent insurance? ${userDataBreak.currentInsurance}\nhow many years on licence? ${userDataBreak.howManyYears}\npreviously insured? ${userDataBreak.previousInc}\nhow is car used? ${userDataBreak.howCarUsed}\nis your car modded? ${userDataBreak.isCarMod}\nany finance owing on car? ${userDataBreak.anyFinance}\nany defects on car? ${userDataBreak.anyDefects}\nvehicle storage address: ${userDataBreak.storageAddress}\nI NEED TO FIGURE OUT HOW TO SEND THIS NORMALLY`
+        text: `registration number: ${userDataBreak.registrationNumber}\npolicy start date: ${new Date(userDataBreak.startPolicy).toDateString()}\ndate of birth: ${new Date(userDataBreak.dateOfBirth).toDateString()}\ngender: ${userDataBreak.gender}\nlicence: ${userDataBreak.licenceType}\ncurrent insurance? ${userDataBreak.currentInsurance}\nhow many years on licence? ${userDataBreak.howManyYears}\npreviously insured? ${userDataBreak.previousInc}\nhow is car used? ${userDataBreak.howCarUsed}\nis your car modded? ${userDataBreak.isCarMod}\nany finance owing on car? ${userDataBreak.anyFinance}\nany defects on car? ${userDataBreak.anyDefects}\nvehicle storage address: ${userDataBreak.storageAddress}\nI NEED TO FIGURE OUT HOW TO SEND THIS NORMALLY`
     }
 
     transporter.sendMail(mail, function (error, info) {

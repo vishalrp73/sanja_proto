@@ -14,6 +14,7 @@ const YourQuote = () => {
     const [open, setOpen] = useState(false);
     const [quoteEmail, setQuoteEmail] = useState('');
     const [disErr, setDisErr] = useState(false);
+    const [sending, setSending] = useState(false);
 
     useEffect(() => {
 
@@ -61,7 +62,7 @@ const YourQuote = () => {
     }, [])
 
     const sendQuote = () => {
-
+        setSending(true);
         const data = JSON.parse(localStorage.getItem('User Cover Details'))
         const storageAddress = localStorage.getItem('storage-address');
         console.log(data);
@@ -75,12 +76,14 @@ const YourQuote = () => {
         axios.post('http://localhost:4000/email', emailObj)
         .then (response => {
             if (response.status === 201) {
+                setSending(false);
                 console.log('email sent to server');
                 document.getElementById('email-display').innerHTML = 'Your quote has been emailed!';
                 setDisErr(false);
             }
         })
         .catch (err => {
+            setSending(false);
             console.log(err)
             setDisErr(true);
             document.getElementById('email-display').innerHTML = 'Quote unable to be sent, check connection'
@@ -124,6 +127,9 @@ const YourQuote = () => {
                                 className = 'quote-send-btn' />
                                 <p className = 'email-modal-display' id = 'email-display'
                                     style = {{color: !disErr ? 'limegreen' : 'orangered'}}>
+                                        {
+                                            sending ? 'sending ...' : ''
+                                        }
                                 </p>
                         </div>
                 </Modal>
