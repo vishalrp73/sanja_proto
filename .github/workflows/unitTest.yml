@@ -1,4 +1,4 @@
-name: Unit Testing with Jest
+name: Unit Tests and SonarCloud Analysis
 
 on:
   push:
@@ -7,10 +7,9 @@ on:
       - feat/server-merge
 
 jobs:
-  build:
-
+  buildAndTest:
+    name: Unit Testing in Jest
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
@@ -23,3 +22,17 @@ jobs:
           npm install
           npm run build -- if-present
           npm test
+
+          
+  sonarCloudTrigger:
+        needs: buildAndTest
+        name: SonarCloud Trigger
+        runs-on: ubuntu-latest
+        steps:
+          - name: Clone Repo
+            uses: actions/checkout@v2
+          - name: Analyse with SonarCloud
+            uses: sonarsource/sonarcloud-github-action@v1.3
+            env:
+              GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+              SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
