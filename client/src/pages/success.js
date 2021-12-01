@@ -2,7 +2,18 @@ import './pageCSS/success.css';
 import ScrollToTop from '../functions/scrollToTop';
 import success_img from '../img/success-banner.png';
 
+import { useHistory } from 'react-router-dom';
+
 const Success = () => {
+
+    const history = useHistory();
+
+    const editQuote = () => {
+        history.push('/editQuote.js');
+        window.location.reload(false);
+    }
+
+
     return (
         <div className = 'success-wrapper'>
             <div className = 'success-left'>
@@ -22,7 +33,7 @@ const Success = () => {
                             type = 'button' value = 'Back Home' />
                     </a>
                     <input className = 'success-btn' id = 'acc-btn'
-                        type = 'button' value = 'My Account' />
+                        type = 'button' value = 'My Account' onClick = {() => editQuote()} />
                     
                 </div>
             </div>

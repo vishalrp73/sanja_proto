@@ -9,14 +9,13 @@ import Home from './pages/home';
 import Insurance from './pages/insurance';
 import GetQuote from './pages/getQuote';
 import Success from './pages/success';
+import EditQuote from './pages/editQuote';
 import TY from './components/ty/ty';
 
 import Chatbot from './components/chatbot/chatbot';
 
 
 function App() {
-  
-  console.log('Initiating new feature polish branch')
 
   return (
     <div className="App">
@@ -46,6 +45,10 @@ function App() {
 
                 <Route exact path = '/success.js'>
                   <Success />
+                </Route>
+
+                <Route exact path = '/editQuote.js'>
+                  <EditQuote />
                 </Route>
 
                 <Route exact path = '/thanks.js'>

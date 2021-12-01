@@ -235,6 +235,37 @@ app.post('/signup', (req, res) => {
     }
     
 
-})
+});
+
+app.post('/findQuote', (req, res) => {
+    const email = req.body.email;
+
+    User.find({emailAddress: email})
+    .then (quote => {
+        res.send(quote)
+        console.log(quote)
+    })
+    .catch (err => console.log(err));
+});
+
+app.post('/save', (req, res) => {
+    const quote_id = req.body.id
+    const newPolicy = req.body.policy
+    console.log(quote_id)
+    console.log(newPolicy)
+
+    User.findByIdAndUpdate(
+        {_id: quote_id}, {$set: {"selectedPolicy": newPolicy}},
+        (req, res, err) => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('Policy update successful !');
+            }
+        }
+    )
+    res.status(201).send('Policy Update successful')
+
+});
 
 app.listen(port, () => console.log('Server running on port', port));
