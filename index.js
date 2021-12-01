@@ -192,13 +192,10 @@ app.post('/login', (req, res) => {
         password: req.body.password
     }
 
-    console.log(userDetails);
-
     Auth.find()
     .then (users => {
         const data = users
         data.forEach(data => {
-            console.log(data.email)
             if (userDetails.email === data.email) {
                 const passCheck = bcrypt.compareSync(userDetails.password, data.password);
                 if (passCheck) {
@@ -207,7 +204,7 @@ app.post('/login', (req, res) => {
                     res.status(401).send('Authentication failed')
                 }
             } else {
-                console.log('Unable to find email');
+                return
             }
         })
     })
@@ -216,6 +213,10 @@ app.post('/login', (req, res) => {
 
 })
 
+/*
+    One time testing endpoint,
+    re-active when needing to set up registration system
+*/
 app.post('/signup', (req, res) => {
     const hashPass = bcrypt.hashSync(req.body.password, 12);
 
